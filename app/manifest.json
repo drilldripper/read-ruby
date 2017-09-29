@@ -1,0 +1,35 @@
+{
+  "name": "ReadRuby",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Making English easy to read using Ruby ",
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "scripts/chromereload.js",
+      "scripts/background.js"
+    ]
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["scripts/content.js"],
+    "css" : ["css/ruby.css"]
+  }],
+
+  "browser_action": {
+    "default_icon": "images/icon-16.png",
+    "default_title": "test"
+  },
+
+  "options_page": "options.html",
+  
+
+  "permissions": [
+    "storage"
+  ]
+
+}
