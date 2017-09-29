@@ -4,12 +4,15 @@
 <html>
 <head>
   <title>My Test Extension Options</title>
+  <style>
+      body: { padding: 10px; }
+  </style>
 </head>
 
 
 
 <body>
-  Your Level:
+  英単語レベルを設定する:
   <select id="level">
     <option value="1">1</option>
     <option value="2">2</option>
@@ -25,10 +28,14 @@
     <option value="12">12</option>
   </select>
 
+  <button id="save">設定を保存する</button>
+  
+  <p>----------------------------------------------------------------</p>
+  
   <p>ルビをふる英単語のレベルを設定してください。</p>
   <p>選択したレベル以上の単語にルビが付きます。</p>
   <p>レベルは<a href="https://www.alc.co.jp/vocgram/article/svl/">アルクのSVL12000</a>を基準にしています。</p>
-  <p>Level 1</p>
+  <p>Level 1 入門</p>
   <p>Level 2-4 初級</p>
   <p>Level 5-7 中級</p>
   <p>Level 8-10 上級</p>
@@ -36,7 +43,6 @@
 
 
   <div id="status"></div>
-  <button id="save">Save</button>
 
   <script src="scripts/options.js"></script>
 </body>
