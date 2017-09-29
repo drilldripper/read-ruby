@@ -1,6 +1,6 @@
 {
-  "name": "ReadRuby",
-  "version": "0.0.1",
+  "name": "Read Ruby",
+  "version": "1.0.0",
   "manifest_version": 2,
   "description": "Making English easy to read using Ruby ",
   "icons": {
@@ -21,7 +21,7 @@
 
   "browser_action": {
     "default_icon": "images/icon-16.png",
-    "default_title": "test"
+    "default_title": "Read Ruby"
   },
 
   "web_accessible_resources": [
