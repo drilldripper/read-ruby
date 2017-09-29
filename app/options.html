@@ -4,35 +4,36 @@
 <html>
 <head>
   <title>My Test Extension Options</title>
-  <style>
-    body: { padding: 10px; }
-  </style>
 </head>
-<p>ルビをふる英単語のレベルを設定してください。</p>
-<p>レベルはアルクのSVL12000をもとに設定しています。</p>
-<p>基準は主に次のようになっています。</p>
-<p>Level 1</p>
-<p>Level 2-4 初級</p>
-<p>Level 5-7 中級</p>
-<p>Level 8-10 上級</p>
-<p>Level 11-12 最上級</p>
+
+
 
 <body>
   Your Level:
   <select id="level">
-   <option value="1">1</option>
-   <option value="2">2</option>
-   <option value="3">3</option>
-   <option value="4">4</option>
-   <option value="5">5</option>
-   <option value="6">6</option>
-   <option value="7">7</option>
-   <option value="8">8</option>
-   <option value="9">9</option>
-   <option value="10">10</option>
-   <option value="11">11</option>
-   <option value="12">12</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
   </select>
+
+  <p>ルビをふる英単語のレベルを設定してください。</p>
+  <p>選択したレベル以上の単語にルビが付きます。</p>
+  <p>レベルは<a href="https://www.alc.co.jp/vocgram/article/svl/">アルクのSVL12000</a>を基準にしています。</p>
+  <p>Level 1</p>
+  <p>Level 2-4 初級</p>
+  <p>Level 5-7 中級</p>
+  <p>Level 8-10 上級</p>
+  <p>Level 11-12 最上級</p>
+
 
   <div id="status"></div>
   <button id="save">Save</button>

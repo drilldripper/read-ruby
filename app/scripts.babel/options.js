@@ -14,13 +14,13 @@ function save_options() {
 }
 
 // Restores select box and checkbox state using the preferences
-// stored in chrome.storage.
 function restore_options() {
   chrome.storage.sync.get({
-    level: 5,
+    level: '5',
   }, function(items) {
-    document.getElementById('level').value = items.favoriteColor;
+    document.getElementById('level').value = items.level;
   });
+  console.log('restore');
 }
 document.addEventListener('DOMContentLoaded', restore_options);
 document.getElementById('save').addEventListener('click',
