@@ -1,10 +1,8 @@
 Read Ruby
 ====
-<div style="text-align: center;">
 
 ![icon](docs/read-ruby.png)
 
-</div>
 
 Webページの英単語の上(ルビ)に意味を表示させるGoogle Chrome拡張です。
 
@@ -26,6 +24,11 @@ Read Ruby -Chrome ウェブストア
 
 ## Usage
 英単語の意味を表示させたいサイト上で、ツールバーのアイコンをクリックしてください。
+
+![icon](docs/toolbar.png)
+
+
+
 下のようなページが
 
 ![icon](docs/before.png)
@@ -37,6 +40,15 @@ Read Ruby -Chrome ウェブストア
 
 
 アイコンをもう一度クリックするとルビを消すことができます。
+
+またツールバーのアイコンのオプションから表示する単語の難易度を設定することができます。
+
+
+![icon](docs/option-toolbar.png)
+![icon](docs/option-pages.png)
+
+
+
 
 ## Dependency
 英日辞書にMITライセンスの[簡短英日辞典](https://github.com/gunyarakun/kantan-ej-dictionary)を使用しています。
