@@ -16,8 +16,7 @@
   },
   "content_scripts": [{
     "matches": ["<all_urls>"],
-    "js": ["scripts/content.js"],
-    "css" : ["css/ruby.css"]
+    "js": ["scripts/content.js"]
   }],
 
   "browser_action": {
@@ -25,11 +24,16 @@
     "default_title": "test"
   },
 
+  "web_accessible_resources": [
+    "css/ruby.css"
+  ],
+
   "options_page": "options.html",
-  
 
   "permissions": [
-    "storage"
+    "storage",
+    "tabs",
+    "<all_urls>"
   ]
 
 }
