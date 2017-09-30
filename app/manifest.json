@@ -1,6 +1,6 @@
 {
   "name": "Read Ruby",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "manifest_version": 2,
 	"description": "Webサイトの英単語の上に単語の意味を表示します。利用者のレベルに応じて表示する英語のレベルを変更できます。",
   "icons": {
