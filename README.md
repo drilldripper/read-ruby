@@ -11,17 +11,6 @@ Webページの英単語の上(ルビ)に意味を表示させるGoogle Chrome�
 ## Install
 [Read Ruby -Chrome ウェブストア](https://chrome.google.com/webstore/detail/read-ruby/halocbmjecniinhbckbcgcpiepokahak/related?hl=ja)
 
-## Develop
-`yarn`
-
-#### Watch
-
-`gulp watch`
-
-#### Build
-`gulp build`
-
-
 ## Usage
 
 ![option-pages](docs/ein.gif)
@@ -39,6 +28,17 @@ Webページの英単語の上(ルビ)に意味を表示させるGoogle Chrome�
 
 
 ![option-pages](docs/option-pages.png)
+
+
+## Develop
+`yarn`
+
+#### Watch
+
+`gulp watch`
+
+#### Build
+`gulp build`
 
 
 
