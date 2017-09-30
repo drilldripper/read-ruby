@@ -2,13 +2,15 @@ import ej_dict from './kantan-ej-dictionary'
 let initFlag = true;
 let displayFlag = true;
 chrome.extension.onMessage.addListener((request, sender, sendResponse) => {
-  if (request == 'goRuby') {
+	if (request == 'goRuby') {
 		chrome.storage.sync.get(null, options => {
-			 console.info(options);
-			 console.log(initFlag);
-			 if(initFlag){
-					let result = document.evaluate("/html/body/descendant::text()[name(..)!='script'][name(..)!='style']",
-					document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+			console.log('length', Object.keys(options).length);
+			if( Object.keys(options).length  == 0) {options['level'] = 4;} //Default SVL
+			console.info(options);
+			console.log(initFlag);
+			if(initFlag){
+				let result = document.evaluate("/html/body/descendant::text()[name(..)!='script'][name(..)!='style']",
+				document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
 				for ( let i=0 ; i < result.snapshotLength; i++ ){
 					let node=result.snapshotItem(i)
 					if(/[a-zA-Z]/.test(node.textContent)){ //Word Only
@@ -32,12 +34,12 @@ chrome.extension.onMessage.addListener((request, sender, sendResponse) => {
 							ruby.appendChild(rb);
 							ruby.appendChild(rt);
 							span.appendChild(ruby);
-					}
-							parentNode.replaceChild(span, node);
+						}
+						parentNode.replaceChild(span, node);
 					}
 				}
 				initFlag = !initFlag;
-			 }
+			}
 		});
 	}
 	displayFlag = !displayFlag;
