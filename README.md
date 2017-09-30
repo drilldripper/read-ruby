@@ -9,7 +9,7 @@ Webページの英単語の上(ルビ)に意味を表示させるGoogle Chrome�
 利用者のレベルに応じて表示する単語の難易度を選択することができます。
 
 ## Install
-Read Ruby -Chrome ウェブストア
+[Read Ruby -Chrome ウェブストア](https://chrome.google.com/webstore/detail/read-ruby/halocbmjecniinhbckbcgcpiepokahak/related?hl=ja)
 
 ## Develop
 `yarn`
@@ -25,28 +25,28 @@ Read Ruby -Chrome ウェブストア
 ## Usage
 英単語の意味を表示させたいサイト上で、ツールバーのアイコンをクリックしてください。
 
-![icon](docs/toolbar.png)
+![toolbar](docs/toolbar.png)
 
 
+アイコンをクリックすると下のようなページが
 
-下のようなページが
-
-![icon](docs/before.png)
-
-
-このようになります。
-
-![icon](docs/after.png)
+![before](docs/before.png)
 
 
-アイコンをもう一度クリックするとルビを消すことができます。
+このようにルビ付きのページになります。
+
+![after](docs/after.png)
+
+
+アイコンをもう一度クリックすると表示/非表示を切り替えることができます。
 
 またツールバーのアイコンのオプションから表示する単語の難易度を設定することができます。
 
 
-![icon](docs/option-toolbar.png)
-![icon](docs/option-pages.png)
+![option-toolbar](docs/option-toolbar.png)
 
+
+![option-pages](docs/option-pages.png)
 
 
 

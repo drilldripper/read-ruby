@@ -5,14 +5,14 @@
 function save_options() {
   var level = document.getElementById('level').value;
   chrome.storage.sync.set({
-    level: level
-  }, function () {
+    level: level,
+  }, function() {
     // Update status to let user know options were saved.
     var status = document.getElementById('status');
-    status.textContent = 'Options saved.';
-    setTimeout(function () {
+    status.textContent = '設定を保存しました';
+    setTimeout(function() {
       status.textContent = '';
-    }, 750);
+    }, 2000);
   });
 }
 

@@ -1,13 +1,12 @@
 {
   "name": "Read Ruby",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "manifest_version": 2,
-  "description": "Making English easy to read using Ruby ",
+	"description": "Webサイトの英単語の上に単語の意味を表示します。利用者のレベルに応じて表示する英語のレベルを変更できます。",
   "icons": {
     "16": "images/icon-16.png",
     "128": "images/icon-128.png"
   },
-  "default_locale": "en",
   "background": {
     "scripts": [
       "scripts/chromereload.js",
@@ -24,11 +23,7 @@
     "default_title": "Read Ruby"
   },
 
-  "options_ui": {
-    "page": "options.html",
-    "chrome_style": true
-  },
-
+  "options_page": "options.html",
 
   "permissions": [
     "storage",

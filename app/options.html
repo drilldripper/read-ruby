@@ -3,12 +3,11 @@
 
 <html>
 <head>
-  <title>My Test Extension Options</title>
+  <title>Read Ruby Option</title>
   <style>
       body: { padding: 10px; }
   </style>
 </head>
-
 
 
 <body>
@@ -27,14 +26,15 @@
     <option value="11">11</option>
     <option value="12">12</option>
   </select>
-
   <button id="save">設定を保存する</button>
+  <div id="status"></div>
   
   <p>----------------------------------------------------------------</p>
   
   <p>ルビをふる英単語のレベルを設定してください。</p>
   <p>選択したレベル以上の単語にルビが付きます。</p>
   <p>レベルは<a href="https://www.alc.co.jp/vocgram/article/svl/">アルクのSVL12000</a>を基準にしています。</p>
+  <p>大まかに以下のような難易度になっています。</p>
   <p>Level 1 入門</p>
   <p>Level 2-4 初級</p>
   <p>Level 5-7 中級</p>
@@ -42,8 +42,7 @@
   <p>Level 11-12 最上級</p>
 
 
-  <div id="status"></div>
 
-  <script src="./options.js"></script>
+  <script src="options.js"></script>
 </body>
 </html>
