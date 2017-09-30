@@ -1,11 +1,11 @@
 import ej_dict from './kantan-ej-dictionary'
 let initFlag = true;
+let displayFlag = true;
 chrome.extension.onMessage.addListener((request, sender, sendResponse) => {
   if (request == 'goRuby') {
 		chrome.storage.sync.get(null, options => {
 			 console.info(options);
 			 console.log(initFlag);
-			 sendResponse({'state': initFlag});
 			 if(initFlag){
 					let result = document.evaluate("/html/body/descendant::text()[name(..)!='script'][name(..)!='style']",
 					document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
@@ -40,5 +40,7 @@ chrome.extension.onMessage.addListener((request, sender, sendResponse) => {
 			 }
 		});
 	}
+	displayFlag = !displayFlag;
+	sendResponse({'display': displayFlag});
 	return true;
 })
