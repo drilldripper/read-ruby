@@ -23,19 +23,11 @@ Webページの英単語の上(ルビ)に意味を表示させるGoogle Chrome�
 
 
 ## Usage
+
+![option-pages](docs/ein.gif)
+
 英単語の意味を表示させたいサイト上で、ツールバーのアイコンをクリックしてください。
 
-![toolbar](docs/toolbar.png)
-
-
-アイコンをクリックすると下のようなページが
-
-![before](docs/before.png)
-
-
-このようにルビ付きのページになります。
-
-![after](docs/after.png)
 
 
 アイコンをもう一度クリックすると表示/非表示を切り替えることができます。
