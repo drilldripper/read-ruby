@@ -11,7 +11,9 @@
     "scripts": [
       "scripts/chromereload.js",
       "scripts/background.js"
-    ]
+    ],
+    "persistent": false
+
   },
   "content_scripts": [{
     "matches": ["<all_urls>"],
