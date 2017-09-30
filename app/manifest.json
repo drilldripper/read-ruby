@@ -24,12 +24,6 @@
     "default_title": "Read Ruby"
   },
 
-  "web_accessible_resources": [
-    "css/ruby.css",
-    "css/display_inline.css",
-    "css/display_none.css"
-  ],
-
   "options_ui": {
     "page": "options.html",
     "chrome_style": true

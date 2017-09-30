@@ -14,6 +14,8 @@ const $ = gulpLoadPlugins();
 gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',
+    'app/scripts/css/*.*',
+    'app/options/*.*',
     'app/_locales/**',
     '!app/scripts.babel',
     '!app/*.json',
