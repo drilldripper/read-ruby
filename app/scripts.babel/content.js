@@ -20,13 +20,13 @@ chrome.extension.onMessage.addListener((request, sender, sendResponse) => {
 						for (let word of words) {
 							let ruby = document.createElement('ruby');
 							let rb = document.createElement('rb');
-							rb.innerText=word;
 							let rt = document.createElement('rt');
 							const hit_word = ej_dict[word];	
 							if (typeof hit_word === 'undefined'){
 							}else if (hit_word['svl_level'] >= options['level']) {
 								rt.innerText = hit_word['ja'][0];	
 							}
+							rb.innerText=word + ' ';
 							ruby.appendChild(rb);
 							ruby.appendChild(rt);
 							span.appendChild(ruby);
