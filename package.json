@@ -54,5 +54,7 @@
       }
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "pluralize": "^7.0.0"
+  }
 }

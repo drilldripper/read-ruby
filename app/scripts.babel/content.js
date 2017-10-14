@@ -1,4 +1,6 @@
 import ej_dict from './kantan-ej-dictionary'
+import pluralize from 'pluralize'
+
 let initFlag = true;
 let displayFlag = true;
 chrome.extension.onMessage.addListener((request, sender, sendResponse) => {
@@ -21,7 +23,9 @@ chrome.extension.onMessage.addListener((request, sender, sendResponse) => {
 							let ruby = document.createElement('ruby');
 							let rb = document.createElement('rb');
 							let rt = document.createElement('rt');
-							const hit_word = ej_dict[word];	
+							//Singularize a word
+							let singularWord = pluralize.singular(word);
+							const hit_word = ej_dict[singularWord];
 							if (typeof hit_word === 'undefined'){
 							}else if (hit_word['svl_level'] >= options['level']) {
 								rt.innerText = hit_word['ja'][0];	
